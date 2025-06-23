@@ -1,0 +1,22 @@
+.custom-info-box {
+    border: 2px solid #007bff; /* Borda de cor azul */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #ffffff; /* Cor de fundo branca */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+}
+
+.custom-info-box .info-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-info-box.shadow-lg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra ao redor do card */
+}
+
+.custom-info-box:hover {
+    transform: translateY(-5px); /* Elevação ao passar o mouse */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+}

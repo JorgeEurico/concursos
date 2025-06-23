@@ -1,0 +1,19 @@
+/* Centralizando a linha de estatísticas */
+.stats-row {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os cards */
+  gap: 30px; /* Espaçamento entre os cards */
+}
+
+/* Ajuste adicional para centralizar o texto em dispositivos menores */
+.stats-row .col {
+  text-align: center;
+}
+
+/* Opcional: Ajustes para mobile */
+@media (max-width: 768px) {
+  .stats-row {
+      flex-direction: column; /* Em telas pequenas, empilhar os cards verticalmente */
+      align-items: center;
+  }
+}
